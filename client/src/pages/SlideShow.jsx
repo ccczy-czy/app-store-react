@@ -6,9 +6,9 @@ function SlideShow(props) {
     const navigate = useNavigate();
 
     function handleLoad(evt, timeout) {
-        // setTimeout(() => {
-        //     navigate('/home');
-        // }, 5000*timeout);
+        setTimeout(() => {
+            navigate('/home');
+        }, 5000*timeout);
     }
 
     const slides = props.paths.map((path, i) => {
